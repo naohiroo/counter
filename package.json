@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Naohiro Okada",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "webpack": "^4.41.5",
     "webpack-cli": "^3.3.10",
