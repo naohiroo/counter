@@ -5,12 +5,12 @@ module.exports = {
   entry: './src/index.js',
   output : {
     //output directory
-    path: path.resolve(__direname, '/.dest'),
+    path: path.resolve(__dirname, '/.dest'),
     //output filename
     filename: 'bundle.js'
   },
   devServer: {
     //the directory which has unneccesary file for webpack. (HTML, images, ..)
-    contentBase: path.resolve(__direname, 'public')
+    contentBase: path.resolve(__dirname, 'public')
   }
 }
