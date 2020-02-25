@@ -1,6 +1,7 @@
 const path = require('path')
 //vue loader pluginを使う
 const VueLoaderPlugin = require('vue-loader/lib/plugin')
+const CopyPlugin = require('copy-webpack-plugin')
 
 module.exports = {
   //entry point
@@ -36,7 +37,14 @@ module.exports = {
     }
   },
   plugins: [
-    new VueLoaderPlugin()
+    new VueLoaderPlugin(),
+    new CopyPlugin(
+      [
+        {
+          from: './public'
+        }
+      ]
+    )
   ],
   devServer: {
     //the directory which has unneccesary file for webpack. (HTML, images, ..)
