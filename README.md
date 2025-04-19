@@ -1,2 +1,2 @@
 # counter
-vue counter
+vue counters
